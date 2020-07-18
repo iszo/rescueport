@@ -9,140 +9,150 @@
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
     <link rel="stylesheet" href="css/styles.css" />
     <!-- endbuild -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
     <title>Friends of Detroit Animal Care and Control</title>
 </head>
 
 <body>
-
-    <header class="jumbotron jumbotron-fluid">
-        <div class="container">
-            <div class="row">
-                <div class= "col-3 col-sm-3 col-md-2 align-self-center">
-                    <img src="img/logo.png" class="img-fluid" />
-                </div>
-                <div class="col">
-                    <h2 class="text-center" >Friends Of</h2>
-                    <h1 class="text-center">Detroit</h1>
-                    <h2 class="text-center">Animal Care & Control</h2>
-                </div>
-            </div> 
-        </div>
-    </header>
-  <!-- <div id="reserveModal" class="modal fade" role="dialog">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h3 class="modal-title">Reserve a Campsite </h3>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                </div>
-                <div class="modal-body">
-                        
-                    <div class="row form-group">
-                        <label for ="numCampers" class="col-sm-6 col-form-label">Number of campers:</label>
-                        <div class="col-sm-6">
-                            <select name = "numCampers" id ="numCampers" class="form-control">
-                                <option value =1>1</option>
-                                <option value =2>2</option>
-                                <option value =3>3</option>
-                                <option value =4>4</option>
-                                <option value =5>5</option>
-                                <option value =6>6</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="row form-group">
-                        <label for ="date" class="col-sm-6 col-form-label">Date:</label>
-                        <div class="col-sm-6">
-                            <input type="date" id="date" name="date" class="form-control">    
-                        </div>
-                    </div>
-                    <div class="row form-group">
-                        <label for ="siteType" class="col-sm-6 col-form-label">Campsite Type:</label>
-                        <div class="col btn-group btn-group-toggle" data-toggle="buttons">
-                                <label class="btn btn-success active">
-                                <input type="radio" name="siteType" id="siteTent" autocomplete="off"> Tent
-                                </label>
-                                <label class="btn btn-primary">
-                                <input type="radio" name="siteType" id="siteRV" autocomplete="off"> RV
-                                </label>
-                        </div>
-                    </div>
-                    <div class="row form-group">
-                        <div class="col">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-                            <button type="button" class="btn btn-primary" type="submit">Search</button>
-                        </div>
-                    </div> 
-                </div>
+<!--header-->
+<header class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <div class="row">
+            <div class= "col-3 col-sm-3 col-md-2 align-self-center">
+                <img src="img/logo.png" class="img-fluid" />
             </div>
-        </div>
+            <div class="col">
+                <h2 class="text-center" >Friends Of</h2>
+                <h1 class="text-center">Detroit</h1>
+                <h2 class="text-center">Animal Care & Control</h2>
+            </div>
+        </div> 
     </div>
--->
-    <nav class="navbar navbar-expand-sm navbar-dark sticky-top"> 
-        <div class="container">
-            <a class="navbar-brand" href = "#"><img src = "img/logo.png" height="30" width="30"/></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nucampNavbar">
-                    <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="nucampNavbar">
-                <ul class="navbar-nav">
-                    <li class="nav-item active"><a class ="nav-link" href="#"> <i class="fa fa-home fa-lg"></i> Home</a></li>
-                    <li class="nav-item"><a class ="nav-link" href="aboutus.html"> <i class="fa fa-info fa-lg"></i> About</a></li>
-                    <li class="nav-item"><a class ="nav-link" href="#"><i class="fa fa-paw fa-lg"></i> Adopt!</a></li>
-                    <li class="nav-item"><a class ="nav-link" href="#"><i class="fa fa-dollar fa-lg"></i> Donate</a></li>
-                    <li class="nav-item"><a class ="nav-link" href="#"><i class="fa fa-question fa-lg"></i> FAQ</a></li>
-                    <li class="nav-item"><a class ="nav-link" href="contactus.html"><i class="fa fa-address-card fa-lg"></i> Contact</a></li>
-                </ul>
-                <span class="navbar-text ml-auto">
-                    <a role="button" class="btn" id="loginButton">
-                        <i class="fa fa-sign-in"></i> Login
-                    </a>
+</header>
 
-            </div>    
-        </div>
-    </nav> 
-
-    <div id="loginModal" class="modal fade" role="dialog">
+<nav class="navbar navbar-expand-md navbar-dark"> 
+    <div class="container">
+        <a class="navbar-brand" href = "index.html"><img src = "img/logo.png" height="30" width="30"/></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nucampNavbar">
+                <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="nucampNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a class ="nav-link active" href="#"> <i class="fa fa-home fa-lg"></i> Home</a></li>
+                <li class="nav-item"><a class ="nav-link" href="about.html"> <i class="fa fa-info fa-lg"></i> About</a></li>
+                <li class="nav-item"><a class ="nav-link disabled" href="#"><i class="fa fa-paw fa-lg"></i> Adopt!</a></li>
+                <li class="nav-item dropdown"><a class ="nav-link dropdown-toggle" id="helpDropdown" href="help.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-group fa-lg"></i> How to Help</a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="helpDropdown">
+                        <a class="dropdown-item" href="#">Donate</a>
+                        <a class="dropdown-item" href="#">Volunteer</a>
+                        <a class="dropdown-item" href="#">Dogventure</a>
+                        <a class="dropdown-item" href="#">Slumber Party</a>
+                        <a class="dropdown-item" href="#">Foster</a>
+                    </div>
+                </li>
+                <li class="nav-item"><a class ="nav-link" href="#"><i class="fa fa-question fa-lg"></i> FAQ</a></li>
+                <li class="nav-item"><a class ="nav-link disabled" href="#"><i class="fa fa-address-card fa-lg"></i> Contact</a></li>
+            </ul>
+        </div>    
+    </div>
+</nav> 
+<!--header ^-->
+<!--Prince Modal-->
+    <div id="princeModal" class="modal fade" role="dialog">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h3 class="modal-title">Login</h3>
+                    <h3 class="modal-title">Prince</h3>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
                 <div class="modal-body">
                     <div class="container-fluid">
-                        <form>
-                            <div class="form-row">
-                                <div class="form-group col-12">
-                                    <label class="sr-only" for="loginEmail"> Email address</label>
-                                    <input type="email" class="form-control form-control-sm" id="loginEmail" placeholder="Enter email">
-                                </div>
-                                <div class="form-group col-12">
-                                    <label class="sr-only" for="loginPassword">Password</label>
-                                    <input type="password" class="form-control form-control-sm" id="loginPassword" placeholder="Password">
-                                </div>
-                                <div class="col">
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox">
-                                        <label class="form-check-label">Remember me </label>
-                                    </div>  
-                                </div>
-                            </div>
-                            <div class="form-row">
-                                <button type ="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
-                                <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>
-                            </div>                          
-                        </form>
+                        <div class="col-12 media-body">
+                            <p class="d-xs-block"> Prince came to DACC after his owner had an accident with a hot pot of oil. The owner ended up in the hospital and, knowing he couldn't afford the vet bills that would come with Prince's injuries, asked us to take care of him. He's still on the mend, but has found a home ready to keep taking care of him.</p>
+                        </div>
+                        <div class="col-12">
+                            <img class="img-fluid" src="img/prince_carousel.jpg" id="princeAfter" onmouseover="this.src='img/prince-before.jpg'" onmouseout="this.src='img/prince_carousel.jpg'">
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+<!--Lizzy Modal-->
+<div id="lizzyModal" class="modal fade" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Lizzy</h3>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <div class="col media-body">
+                        <p class="d-xs-block"> Lizzy was a severely underweight neglect case who came in to DACC so weak and stressed that she stayed in the clinic full time until a foster took her home. That foster failed and adopted her - now she's living her best life with a huge yard, a pond, and regular trips on a boat.</p>
+                    </div>
+                    <div class="col">
+                        <img class="img-fluid" src="img/lizzy_carousel.jpg" id="lizzyAfter" onmouseover="this.src='img/lizzy-before.jpg'" onmouseout="this.src='img/lizzy_carousel.jpg'">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Pixie Modal-->
+<div id="pixieModal" class="modal fade" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Pixie</h3>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="container-fluid">
+                    <div class="col media-body">
+                        <p class="d-xs-block"> Pixie was found as a young puppy having been used to train fighting dogs. Covered in old bite wounds all over her face, neck, and paws, she was shut down at the shelter. All of the noise, other dogs, and strangers were so overwhelming she wouldn't move. After a few months in her new home, is ready to destroy any tennis ball she sees.</p>
+                    </div>
+                    <div class="col">
+                        <img class="img-fluid" src="img/pixie_carousel.jpg" id="pixieAfter" onmouseover="this.src='img/pixie-before.jpg'" onmouseout="this.src='img/pixie_carousel.jpg'">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <div class= "container">
+        <div class = "row row-content">
+            <div class = "col">
+                <h2>Our Mission:</h2>
+            </div>
+            <div class="media">
+                <div class="col-xs-11">
+                    <div class="media">
+                        <div class="media-body align-items-center">
+                            <h1>Help Detroit's Animals</h1>
+                            <p class="d-sm-block">We work hand in hand with Detroit Animal Care and Control to help the homeless animals in our city. We also help DACC by doing all we can to keep animals out of the shelter in the first place.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <h2 class="text-center">Success Stories</h2>
+            </div>
+        </div>
+    </div>
+                
+<!-- carousel -->
     <div class= "container">
         <div class="row row-content">
-            <div class="col-md-8 mx-auto">
-                <div id="homeCarousel" class="carousel slide" data-ride="carousel">
+            <div class="col-md-6 mx-auto">
+                <div id="homeCarousel" class="carousel slide carousel-fade" data-ride="carousel">
                     <ol class="carousel-indicators">
                         <li data-target="#homeCarousel" data-slide-to="0" class="active"></li>
                         <li data-target="#homeCarousel" data-slide-to="1"></li>
@@ -150,27 +160,27 @@
                     </ol>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img class="d-block w-100" src="img/breadcrumb-trail.jpg" alt="Breadcrumb Trail Campground" />
+                            <img class="d-block carousel-image"  src="img/pixie_carousel.jpg" alt="Pixie the Pibble" id="pixieButton"/>
                             <div class="carousel-caption">
-                                <h3>Breadcrumb Trail Campground</h3>
-                                <p class="d-none d-sm-block">Let Nucamp be your guide to this off-the-beaten-path, hike-in-only campground.</p>
+                                <h3>Pixie</h3>
+                                <a data-target="#pixieModal" data-toggle="modal" href="#pixieModal"><p style="color:white">Click a dog to see their story.</p></a>
+                            
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block w-100" src="img/react-lake.jpg" alt="React Lake Campground" />
+                            <img class="d-block carousel-image" src="img/lizzy_carousel.jpg" alt="Izzy Lizzy" id="lizzyButton"/>
                             <div class="carousel-caption">
-                                <h3>React Lake Campground</h3>
-                                <p class="d-none d-sm-block">Nestled in the foothills of the Chrome Mountains, this campground on the shores of the pristine React Lake is a favorite for fly fishers.</p>
+                                <h3>Lizzy</h3>
+                                <a data-target="#lizzyModal" data-toggle="modal" href="#lizzyModal"><p style="color:white">Click a dog to see their story.</p></a>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img class="d-block w-100" src="img/chrome-river.jpg" alt="Chrome River Campground" />
+                            <img class="d-block carousel-image" src="img/prince_carousel.jpg" alt="Handsome boy Prince" id="princeButton"/>
                             <div class="carousel-caption">
-                                <h3>Chrome River Campground</h3>
-                                <p class="d-none d-sm-block">Spend a few sunny days and starry nights beneath a canopy of old-growth firs at this enchanting spot by the Chrome River.</p>
-
+                                <h3>Prince</h3>
+                                <a data-target="#princeModal" data-toggle="modal" href="#princeModal"><p style="color:white">Click a dog to see their story.</p></a>
+                            </div>
                         </div>
-                    </div>
                 </div>
                 <a class="carousel-control-prev" href="#homeCarousel" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon"></span>
@@ -181,67 +191,14 @@
                     <span class="sr-only">Next</span>
                 </a>
                 
-                    <button class="btn btn-danger btn-sm" id="carouselButton">
-                        <i class="fa fa-pause"></i>
-                    </button>
+                <button class="btn btn-danger btn-sm" id="carouselButton">
+                    <i class="fa fa-pause"></i>
+                </button>
                 
             </div>
         </div>
     </div>
-
-        <div class="row row-content">
-        <div class = "row row-content align-items-center">
-            <div class = "col-sm-4 order-sm-last col-med-3">
-                <h2 class = "text-sm-right">Discover & Review</h2>
-            </div>
-            <div class = "col">
-                <div class="media">
-                    <img class="d-flex mr-3 img-thumbnail" src="/img/breadcrumb-trail-thumb.jpg" alt="breadcrumb Trail thumbnail" />
-                    <div class="media-body align-self-center">
-                        <h3>Our Campsites</h3>
-                        <p>Explore our growing database of curated campsites and leave your own reviews!</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class= "container">
-        <div class = "row row-content align-items-center">
-            <div class = "col-sm-4 col-med-3">
-                <h2>Featured Campsites</h2>
-            </div>
-            <div class = "col">
-                <div class="media">
-                    <div class="media-body align-self-center">
-                        <h3 class="align-self-center">React Lake Campground</h3>
-                        <p>Nestled in the foothills of the Chrome Mountains, this campground on the shores of the pristine React Lake is a favorite for fly fishers.</p>
-                    </div>
-                    <img class="ml-5" src="img/react-lake-thumb.jpg" alt="React Lake Thumbnail">
-                    </div>
-                </div>
-            </div>
-        </div>    
-    </div>
-
-    <div class= "container">
-        <div class = "row row-content align-items-center">
-            <div class = "col-sm-4 col-med-3">
-                <h2 class = "text-sm-right">Our Community Partners</h2>
-            </div>
-            <div class="media">
-                <div class="col">
-                    <div class="media">
-                        <img class="d-flex mr-3 img-thumbnail" src="img/bootstrap-thumb.png" alt="Bootstrap Outfitters" />
-                        <div class="media-body align-self-center">
-                            <h3>Bootstrap Outfitters</h3>
-                            <p class="d-none d-sm-block">Bootstrap Outfitters supplies you with gear you need at prices you can't beat.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+</div>
 
 
     <footer class="site-footer">
@@ -264,8 +221,8 @@
                     <a class="btn btn-social-icon btn-youtube" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
                 </div>
                 <div class="col-sm-4 text-center">
-                    <a role="button" class ="btn btn-link" href="tel:+12065551234"><i class="fa fa-phone fa-lg text-primary"></i></a> 1-206-555-1234<br />
-                    <a role = "button" class ="btn btn-link" href="mail:campsite@nucamp.co"><i class="fa fa-envelope-o fa-lg text-primary"></i></a> campsites@nucamp.co
+                    <a role="button" class ="btn btn-link" href="tel:+13132246356"><i class="fa fa-phone fa-lg text-primary"></i></a> (313)224-6356<br />
+                    <a role = "button" class ="btn btn-link" href="mail:adopt@friendsofdacc.org"><i class="fa fa-envelope-o fa-lg text-primary"></i></a> adopt@friendsofdacc.org
                 </div>
            </div>
         </div>
@@ -277,9 +234,6 @@
 <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="js/scripts.js"></script>
 <!-- endbuild -->
-
-<script src="js/scripts.js"></script>
-
 
 </body>
 
